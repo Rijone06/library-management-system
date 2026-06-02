@@ -27,6 +27,11 @@ body{
     padding:30px 25px;
 }
 
+.sidebar a{
+    color:white;
+    text-decoration:none;
+}
+
 .logo h1{
     font-size:48px;
     font-weight:700;
@@ -56,6 +61,7 @@ nav ul li{
     cursor:pointer;
     transition:.3s;
 }
+
 
 nav ul li:hover{
     background:rgba(255,255,255,.15);

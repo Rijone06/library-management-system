@@ -18,6 +18,11 @@ body {
     color: white;
     padding: 30px 25px;
 }
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+}
 .logo h1 {
     font-size: 48px;
 }
