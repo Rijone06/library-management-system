@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Admin Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.3.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="brand-panel">
+            <div class="brand-content">
+                <div class="logo">
+                    <h1>Library</h1>
+                    <p>Management</p>
+                </div>
+                <p class="tagline">Access the administrator panel to manage books, members, and tracking utilities.</p>
+            </div>
+            <div class="footer-note">
+                <p>&copy; 2026 Library System v2.0</p>
+            </div>
+        </div>
+
+        <div class="form-panel">
+            <a href="index.html" class="back-home-btn">
+                <i class="ri-arrow-left-s-line"></i><< Back to Home
+            </a>
+
+            <div class="form-box">
+                <h2>Welcome Back</h2>
+                <p class="subtitle">Please sign in to your administrator account</p>
+
+                <form action="index.html" method="POST">
+                    <div class="input-group">
+                        <label for="username">Username or Email</label>
+                        <div class="input-wrapper">
+                            <i class="ri-user-line"></i>
+                            <input type="text" id="username" placeholder="admin@example.com" required autocomplete="username">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label for="password">Password</label>
+                            <a href="#" class="forgot-link">Forgot?</a>
+                        </div>
+                        <div class="input-wrapper">
+                            <i class="ri-lock-line"></i>
+                            <input type="password" id="password" placeholder="••••••••" required autocomplete="current-password">
+                        </div>
+                    </div>
+
+                    <div class="remember-row">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Keep me logged in
+                        </label>
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        Sign In <i class="ri-arrow-right-line"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
