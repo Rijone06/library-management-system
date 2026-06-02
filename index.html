@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.3.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h1>Library</h1>
+            <p>Management</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="active"><i class="ri-dashboard-line"></i> Dashboard</li>
+                <li><i class="ri-book-line"></i> Books</li>
+                <li><i class="ri-group-line"></i> Members</li>
+                <li><i class="ri-file-list-line"></i> Issues</li>
+                <li><i class="ri-settings-3-line"></i> Settings</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Library overview and quick actions</p>
+            </div>
+
+            <div class="header-right">
+                <input type="text" placeholder="Search books or members">
+                <button class="admin-btn">Admin</button>
+            </div>
+        </header>
+
+        <!-- Stats -->
+        <section class="stats">
+
+            <div class="card">
+                <h3>Available Books</h3>
+                <h2>1,250</h2>
+            </div>
+
+            <div class="card">
+                <h3>Members</h3>
+                <h2>340</h2>
+            </div>
+
+            <div class="card">
+                <h3>Books Issued</h3>
+                <h2>86</h2>
+            </div>
+
+            <div class="card">
+                <h3>Pending Requests</h3>
+                <h2>12</h2>
+            </div>
+
+        </section>
+
+        <!-- Activity Table -->
+        <section class="table-card">
+
+            <div class="table-header">
+                <h2>Recent Activity</h2>
+                <button class="refresh-btn">Refresh</button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>Book</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Rafi</td>
+                        <td>Physics Fundamentals</td>
+                        <td><span class="status returned">Returned</span></td>
+                        <td>May 30, 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ayesha</td>
+                        <td>Modern Web Design</td>
+                        <td><span class="status issued">Issued</span></td>
+                        <td>May 31, 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tanik</td>
+                        <td>Database Systems</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>June 1, 2026</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

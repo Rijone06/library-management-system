@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Books Management</title>
+    <link rel="stylesheet" href="books.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.3.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Library</h1>
+                <p>Management</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><i class="ri-dashboard-line"></i> Dashboard</li>
+                    <li class="active"><i class="ri-book-line"></i> Books</li>
+                    <li><i class="ri-group-line"></i> Members</li>
+                    <li><i class="ri-file-list-line"></i> Issues</li>
+                    <li><i class="ri-settings-3-line"></i> Settings</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="page-header">
+                <div>
+                    <h1>Books</h1>
+                    <p>Manage library books collection and availability</p>
+                </div>
+                <button class="add-btn">
+                    <i class="ri-add-line"></i> Add Book
+                </button>
+            </div>
+
+            <div class="filter-bar">
+                <input type="text" placeholder="Search by title, author, or ISBN...">
+                <select>
+                    <option>All Categories</option>
+                    <option>Programming</option>
+                    <option>Science</option>
+                    <option>History</option>
+                </select>
+                <select>
+                    <option>All Status</option>
+                    <option>Available</option>
+                    <option>Issued</option>
+                </select>
+            </div>
+
+            <section class="table-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Author</th>
+                            <th>Category</th>
+                            <th>Copies</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clean Code</td>
+                            <td>Robert C. Martin</td>
+                            <td>Programming</td>
+                            <td>12</td>
+                            <td><span class="status available">Available</span></td>
+                            <td class="action-btns">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Atomic Habits</td>
+                            <td>James Clear</td>
+                            <td>Self Development</td>
+                            <td>5</td>
+                            <td><span class="status issued">Issued</span></td>
+                            <td class="action-btns">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Database System Concepts</td>
+                            <td>Abraham Silberschatz</td>
+                            <td>Database</td>
+                            <td>8</td>
+                            <td><span class="status available">Available</span></td>
+                            <td class="action-btns">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

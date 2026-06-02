@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Settings</title>
+
+    <link rel="stylesheet" href="settings.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.3.0/remixicon.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h1>Library</h1>
+            <p>Management</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><i class="ri-dashboard-line"></i> Dashboard</li>
+                <li><i class="ri-book-line"></i> Books</li>
+                <li><i class="ri-group-line"></i> Members</li>
+                <li><i class="ri-file-list-line"></i> Issues</li>
+                <li class="active"><i class="ri-settings-3-line"></i> Settings</li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="page-header">
+            <div>
+                <h1>Settings</h1>
+                <p>Manage library preferences and account settings</p>
+            </div>
+        </div>
+
+        <!-- Library Information -->
+
+        <section class="settings-card">
+
+            <h2>Library Information</h2>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>Library Name</label>
+                    <input type="text" value="Central Library">
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" value="library@example.com">
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Address</label>
+                    <input type="text" value="123 Library Road, City">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Admin Profile -->
+
+        <section class="settings-card">
+
+            <h2>Admin Profile</h2>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>Admin Name</label>
+                    <input type="text" value="Admin User">
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="text" value="+880 123456789">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Password -->
+
+        <section class="settings-card">
+
+            <h2>Security</h2>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>Current Password</label>
+                    <input type="password">
+                </div>
+
+                <div class="input-group">
+                    <label>New Password</label>
+                    <input type="password">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Borrow Rules -->
+
+        <section class="settings-card">
+
+            <h2>Borrowing Rules</h2>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>Maximum Books Per Member</label>
+                    <input type="number" value="5">
+                </div>
+
+                <div class="input-group">
+                    <label>Borrow Duration (Days)</label>
+                    <input type="number" value="14">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Notifications -->
+
+        <section class="settings-card">
+
+            <h2>Notifications</h2>
+
+            <div class="toggle-row">
+                <span>Email Notifications</span>
+                <input type="checkbox" checked>
+            </div>
+
+            <div class="toggle-row">
+                <span>Overdue Alerts</span>
+                <input type="checkbox" checked>
+            </div>
+
+        </section>
+
+        <button class="save-btn">
+            Save Changes
+        </button>
+
+    </main>
+
+</div>
+
+</body>
+</html>

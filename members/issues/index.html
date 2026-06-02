@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Issues Management</title>
+
+    <link rel="stylesheet" href="issues.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.3.0/remixicon.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h1>Library</h1>
+            <p>Management</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><i class="ri-dashboard-line"></i> Dashboard</li>
+                <li><i class="ri-book-line"></i> Books</li>
+                <li><i class="ri-group-line"></i> Members</li>
+                <li class="active"><i class="ri-file-list-line"></i> Issues</li>
+                <li><i class="ri-settings-3-line"></i> Settings</li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="page-header">
+
+            <div>
+                <h1>Issues</h1>
+                <p>Manage issued and returned books</p>
+            </div>
+
+            <button class="issue-btn">
+                <i class="ri-add-line"></i>
+                Issue Book
+            </button>
+
+        </div>
+
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Issues</h3>
+                <h2>86</h2>
+            </div>
+
+            <div class="card">
+                <h3>Returned</h3>
+                <h2>64</h2>
+            </div>
+
+            <div class="card">
+                <h3>Active Issues</h3>
+                <h2>18</h2>
+            </div>
+
+            <div class="card">
+                <h3>Overdue</h3>
+                <h2>4</h2>
+            </div>
+
+        </section>
+
+        <div class="filter-bar">
+
+            <input
+                type="text"
+                placeholder="Search member or book"
+            >
+
+            <select>
+                <option>All Status</option>
+                <option>Issued</option>
+                <option>Returned</option>
+                <option>Overdue</option>
+            </select>
+
+        </div>
+
+        <section class="table-card">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>Book</th>
+                        <th>Issue Date</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Rafi Ahmed</td>
+                        <td>Physics Fundamentals</td>
+                        <td>May 25, 2026</td>
+                        <td>June 08, 2026</td>
+                        <td>
+                            <span class="returned">
+                                Returned
+                            </span>
+                        </td>
+                        <td>
+                            <button class="view-btn">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Ayesha Rahman</td>
+                        <td>Modern Web Design</td>
+                        <td>May 30, 2026</td>
+                        <td>June 13, 2026</td>
+                        <td>
+                            <span class="issued">
+                                Issued
+                            </span>
+                        </td>
+                        <td>
+                            <button class="view-btn">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Tanik Hasan</td>
+                        <td>Database Systems</td>
+                        <td>May 15, 2026</td>
+                        <td>May 29, 2026</td>
+                        <td>
+                            <span class="overdue">
+                                Overdue
+                            </span>
+                        </td>
+                        <td>
+                            <button class="view-btn">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
